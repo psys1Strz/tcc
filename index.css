@@ -1,0 +1,45 @@
+/* Remove margens e espaçamentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* cor do fundo */
+body {
+  color: rgb(255, 255, 255);
+  background-color: #EDE3C9;
+}
+
+/* barra do inicio do site */
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px; 
+}
+
+/* cor da barra do inicio*/
+nav {
+  background-color: #FF6767; 
+  padding: 10px; /* espaço interno opcional */
+}
+
+/* cor das letras da barra inicial */
+a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* imagem da logo */
+img{
+ width: 780px;
+ height: 224px;
+ 
+}
+/* centralização da primeira logo*/
+.center {
+    text-align: center;
+}
+

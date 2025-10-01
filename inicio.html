@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Império</title>
+  <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <!-- Faixa vermelha no topo -->
+  <div class="top-strip"></div>
+
+  <!-- Menu -->
+  <header>
+    <nav class="nav">
+      <a href="#" class="nav-link">início</a>
+      <a href="#" class="nav-link">brinquedos</a>
+      <a href="#" id="open-cart" class="nav-link">carrinho</a>
+      <a href="#" id="open-login" class="nav-link">login</a>
+    </nav>
+  </header>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="d:\Users\DESKTOP\Downloads\378fbd80-c252-4613-b79e-2556564b4b9d.jpg" alt="Logo Kids Império"> 
+  </div>
+
+  <!-- Produtos principais -->
+  <main>
+    <div class="grid">
+      <article class="card">
+        <div class="inner">
+          <img class="thumb" src="d:\Users\DESKTOP\Downloads\Meu-primeiro-gradiente-de-1989-1024x768.jpg" alt="Produto 1"> 
+          <h3 class="title">MEU PRIMEIRO GRADIENTE</h3>
+          <div class="meta">
+            <div class="price">R$ 100,00</div>
+            <div class="stock">Unidades: 32</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="inner">
+          <img class="thumb" src="d:\Users\DESKTOP\Downloads\26135159.jpg" alt="Produto 2"> 
+          <h3 class="title">BONECO DA ESTRELA KEN</h3>
+          <div class="meta">
+            <div class="price">R$ 50,00</div>
+            <div class="stock">Unidades: 2</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Carrossel -->
+  <section class="carousel">
+    <div class="carousel-track">
+      <img src="d:\Users\DESKTOP\Downloads\8888590.jpg" alt="Fofão"> 
+      <img src="d:\Users\DESKTOP\Downloads\11089005.jpg" alt="Imagem 2"> 
+      <img src="d:\Users\DESKTOP\Downloads\17600507.jpg" alt="Imagem 3"> 
+      <img src="d:\Users\DESKTOP\Downloads\13573724.jpg" alt="Imagem 4">
+      <img src="d:\Users\DESKTOP\Downloads\6182457.jpg" alt="Imagem "> 
+      <img src="d:\Users\DESKTOP\Downloads\6182192.jpg" alt="Imagem ">
+      <img src="d:\Users\DESKTOP\Downloads\6182466.jpg" alt="Imagem "> 
+      <img src="d:\Users\DESKTOP\Downloads\6182452.jpg" alt="Imagem "> 
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </section>
+
+  <!-- Modal Login -->
+   <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <button class="close-modal" id="close-login">✖</button>
+      <h2>Iniciar Sessão</h2>
+      <button class="register-btn">Registrar-se</button>
+      <form>
+        <label for="email">Endereço de e-mail</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Palavra-passe</label>
+        <input type="password" id="password" name="password" required>
+        <div class="forgot">esqueceu da senha?</div>
+        <button type="submit" class="login-btn">Iniciar sessão</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Carrinho -->
+  <div class="modal" id="cart-modal">
+    <div class="modal-content">
+      <button class="close-modal" id="close-cart">✖</button>
+      <h2>Seu Carrinho</h2>
+      <div class="cart-items">
+        <p>Nenhum item no carrinho.</p>
+      </div>
+      <div class="cart-footer">
+        <strong>Total: R$ 0,00</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Faixa no rodapé -->
+  <footer>
+    <div class="footer-strip">
+      <div class="footer-badge">K I D S</div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="inicio.js"></script>
+</body>
+</html>

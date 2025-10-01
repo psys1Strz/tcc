@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #f8f3ec;
+      width: 350px;
+      padding: 30px;
+      border-radius: 15px;
+      position: relative;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    }
+
+    .container h2 {
+      margin: 0 0 20px 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .register-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #f87171;
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: #e6ecff;
+      outline: none;
+    }
+
+    .forgot {
+      text-align: right;
+      font-size: 12px;
+      margin-top: -10px;
+      margin-bottom: 15px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f87171;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-btn:hover,
+    .register-btn:hover {
+      background-color: #ef4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Iniciar Sessão</h2>
+    <button class="register-btn">Registrar-se</button>
+
+    <form>
+      <label for="email">Endereço de e-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Palavra-passe</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="forgot">esqueceu da senha?</div>
+
+      <button type="submit" class="login-btn">Iniciar sessão</button>
+    </form>
+  </div>
+</body>
+</html>
